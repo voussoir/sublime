@@ -5,6 +5,8 @@
 { "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}},
 { "keys": ["ctrl+shift+enter"], "command": "insert", "args": {"characters": "\n#"}},
 { "keys": ["f4"], "command": "timestamp" },
+{ "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
+{ "keys": ["ctrl+f9"], "command": "permute_lines", "args": {"operation": "unique"} },
 
 // Auto-pair backticks
 { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
