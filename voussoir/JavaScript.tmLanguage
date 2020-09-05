@@ -572,13 +572,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(boolean|byte|char|class|double|enum|float|function|int|interface|long|short|var|void)\b</string>
+			<string>\b(boolean|byte|char|class|double|enum|float|function|int|interface|long|short|var|let|const|void)\b</string>
 			<key>name</key>
 			<string>storage.type.js</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(const|export|extends|final|implements|native|private|protected|public|static|synchronized|throws|transient|volatile)\b</string>
+			<string>\b(export|extends|final|implements|native|private|protected|public|static|synchronized|throws|transient|volatile)\b</string>
 			<key>name</key>
 			<string>storage.modifier.js</string>
 		</dict>
