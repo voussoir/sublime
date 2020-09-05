@@ -590,7 +590,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(delete|in|instanceof|new|typeof|with)\b</string>
+			<string>\b(delete|in|of|instanceof|new|typeof|with)\b</string>
 			<key>name</key>
 			<string>keyword.operator.js</string>
 		</dict>
