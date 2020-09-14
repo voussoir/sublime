@@ -20,6 +20,10 @@
 
 
 <script type="text/javascript">
+function on_pageload()
+{
+}
+document.addEventListener("DOMContentLoaded", on_pageload);
 </script>
 </html>
 
