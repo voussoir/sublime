@@ -51,23 +51,9 @@
 
 		<dict>
 			<key>match</key>
-			<string>\b(?i:(0x\h*)L)</string>
-			<key>name</key>
-			<string>constant.numeric.integer.long.hexadecimal.python</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
 			<string>\b(?i:(0x\h*))</string>
 			<key>name</key>
 			<string>constant.numeric.integer.hexadecimal.python</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
-			<string>\b(?i:(0[0-7]+)L)</string>
-			<key>name</key>
-			<string>constant.numeric.integer.long.octal.python</string>
 		</dict>
 
 		<dict>
@@ -103,13 +89,6 @@
 			<string>\b(?i:(\d+e[\-\+]?\d+))</string>
 			<key>name</key>
 			<string>constant.numeric.float.python</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
-			<string>\b(?i:([1-9]+[0-9]*|0)L)</string>
-			<key>name</key>
-			<string>constant.numeric.integer.long.decimal.python</string>
 		</dict>
 
 		<dict>
