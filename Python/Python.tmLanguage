@@ -51,16 +51,23 @@
 
 		<dict>
 			<key>match</key>
-			<string>\b(?i:(0x\h*))</string>
+			<string>\b(0[Xx]\h*)</string>
 			<key>name</key>
 			<string>constant.numeric.integer.hexadecimal.python</string>
 		</dict>
 
 		<dict>
 			<key>match</key>
-			<string>\b(0[0-7]+)</string>
+			<string>\b(0[Oo][0-7]+)</string>
 			<key>name</key>
 			<string>constant.numeric.integer.octal.python</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b([1-9]+[0-9_]*|0)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.decimal.python</string>
 		</dict>
 
 		<dict>
@@ -89,13 +96,6 @@
 			<string>\b(?i:(\d+e[\-\+]?\d+))</string>
 			<key>name</key>
 			<string>constant.numeric.float.python</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
-			<string>\b([1-9]+[0-9_]*|0)</string>
-			<key>name</key>
-			<string>constant.numeric.integer.decimal.python</string>
 		</dict>
 
 		<dict>
