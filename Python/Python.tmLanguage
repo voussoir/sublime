@@ -51,6 +51,13 @@
 
 		<dict>
 			<key>match</key>
+			<string>\b(0[Bb][01]+)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.binary.python</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
 			<string>\b(0[Xx]\h*)</string>
 			<key>name</key>
 			<string>constant.numeric.integer.hexadecimal.python</string>
