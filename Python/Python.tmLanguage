@@ -72,13 +72,6 @@
 
 		<dict>
 			<key>match</key>
-			<string>\b([1-9]+[0-9_]*|0)</string>
-			<key>name</key>
-			<string>constant.numeric.integer.decimal.python</string>
-		</dict>
-
-		<dict>
-			<key>match</key>
 			<string>\b(?i:(((\d+(\.(?=[^a-zA-Z_])\d*)?|(?&lt;=[^0-9a-zA-Z_])\.\d+)(e[\-\+]?\d+)?))J)</string>
 			<key>name</key>
 			<string>constant.numeric.complex.python</string>
@@ -103,6 +96,13 @@
 			<string>\b(?i:(\d+e[\-\+]?\d+))</string>
 			<key>name</key>
 			<string>constant.numeric.float.python</string>
+		</dict>
+
+		<dict>
+			<key>match</key>
+			<string>\b([1-9]+[0-9_]*|0)</string>
+			<key>name</key>
+			<string>constant.numeric.integer.decimal.python</string>
 		</dict>
 
 		<dict>
