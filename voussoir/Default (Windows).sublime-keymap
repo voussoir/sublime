@@ -8,6 +8,10 @@
 { "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
 { "keys": ["ctrl+f9"], "command": "permute_lines", "args": {"operation": "unique"} },
 
+// Disable default keybinds I don't care about
+{ "keys": ["ctrl+b"], "command": "false" },
+{ "keys": ["ctrl+shift+b"], "command": "false" },
+
 // Auto-pair backticks
 { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
     [
