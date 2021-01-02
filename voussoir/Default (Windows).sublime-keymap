@@ -3,7 +3,16 @@
 { "keys": ["ctrl+shift+m"], "command": "toggle_minimap"},
 { "keys": ["alt+shift+."], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }},
 { "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}},
-{ "keys": ["ctrl+shift+enter"], "command": "insert", "args": {"characters": "\n#"}},
+{
+    "keys": ["ctrl+shift+enter"],
+    "command": "insert", "args": {"characters": "\n#"},
+    "context": [{ "key": "selector", "operator": "equal", "operand": "source.python" }]
+},
+{
+    "keys": ["ctrl+shift+enter"],
+    "command": "insert", "args": {"characters": "\n//"},
+    "context": [{ "key": "selector", "operator": "equal", "operand": "source.js" }]
+},
 { "keys": ["f4"], "command": "timestamp" },
 { "keys": ["f9"], "command": "sort_lines", "args": {"case_sensitive": false} },
 { "keys": ["ctrl+f9"], "command": "permute_lines", "args": {"operation": "unique"} },
