@@ -1,13 +1,16 @@
 <snippet>
     <content><![CDATA[
-def main(argv):
-    return 0
+from voussoirkit import betterhelp
 
-if __name__ == '__main__':
-    raise SystemExit(main(sys.argv[1:]))
+DOCSTRING = '''
+$1
+======
+'''
+
+return betterhelp.single_main(argv, parser, DOCSTRING)
 
 ]]></content>
-<tabTrigger>defmain</tabTrigger>
+<tabTrigger>betterhelp_single</tabTrigger>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <!-- <tabTrigger>hello</tabTrigger> -->
     <!-- Optional: Set a scope to limit where the snippet will trigger -->

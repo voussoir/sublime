@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+from voussoirkit import betterhelp
+
+DOCSTRING = '''
+$1
+======
+
+{$2}
+
+TO SEE DETAILS ON EACH COMMAND, RUN
+> $1.py <command> --help
+'''
+
+SUB_DOCSTRINGS = dict(
+$2='''
+$2:
+    Command description.
+'''.strip(),
+)
+
+DOCSTRING = betterhelp.add_previews(DOCSTRING, SUB_DOCSTRINGS)
+
+return betterhelp.subparser_main(argv, parser, DOCSTRING, SUB_DOCSTRINGS)
+
+]]></content>
+<tabTrigger>betterhelp_multi</tabTrigger>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <!-- <tabTrigger>hello</tabTrigger> -->
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+</snippet>

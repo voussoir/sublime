@@ -3,10 +3,16 @@
 import argparse
 import sys
 
+from voussoirkit import vlogging
+
+log = vlogging.getLogger(__name__)
+
 def $1_argparse(args):
     return $1()
 
 def main(argv):
+    argv = vlogging.set_level_by_argv(log, argv)
+
     parser = argparse.ArgumentParser(description=__doc__)
 
     parser.add_argument('required_positional')
@@ -26,5 +32,5 @@ if __name__ == '__main__':
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <!-- <tabTrigger>hello</tabTrigger> -->
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <!-- <scope>source.python</scope> -->
+    <scope>source.python</scope>
 </snippet>
