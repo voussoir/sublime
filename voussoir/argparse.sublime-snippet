@@ -5,7 +5,7 @@ import sys
 
 from voussoirkit import vlogging
 
-log = vlogging.getLogger(__name__)
+log = vlogging.getLogger(__name__, '$1')
 
 def $1_argparse(args):
     return $1()

@@ -5,10 +5,10 @@ import sys
 
 from voussoirkit import vlogging
 
-log = vlogging.getLogger(__name__)
+log = vlogging.getLogger(__name__, '$1')
 
-def $1_argparse(args):
-    return $1()
+def $2_argparse(args):
+    return $2()
 
 def main(argv):
     argv = vlogging.set_level_by_argv(log, argv)
@@ -16,12 +16,12 @@ def main(argv):
     parser = argparse.ArgumentParser(description=__doc__)
     subparsers = parser.add_subparsers()
 
-    p_$1 = subparsers.add_parser('$1')
-    p_$1.add_argument('required_positional')
-    p_$1.add_argument('optional_positional', nargs='?', default=None)
-    p_$1.add_argument('-k', '--kwarg', dest='kwarg', default=None)
-    p_$1.add_argument('-b', '--boolkwarg', dest='boolkwarg', action='store_true')
-    p_$1.set_defaults(func=$1_argparse)
+    p_$2 = subparsers.add_parser('$2')
+    p_$2.add_argument('required_positional')
+    p_$2.add_argument('optional_positional', nargs='?', default=None)
+    p_$2.add_argument('-k', '--kwarg', dest='kwarg', default=None)
+    p_$2.add_argument('-b', '--boolkwarg', dest='boolkwarg', action='store_true')
+    p_$2.set_defaults(func=$2_argparse)
 
     args = parser.parse_args(argv)
     return args.func(args)
