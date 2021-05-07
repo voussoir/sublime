@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+from voussoirkit import operatornotify
+(notify_context, argv) = operatornotify.main_log_context(argv, subject='$1 warnings')
+with notify_context:
+]]></content>
+    <tabTrigger>operatornotify_mainlog</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
