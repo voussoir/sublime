@@ -1,33 +1,41 @@
 <snippet>
     <content><![CDATA[
+'''
+$1
+======
+'''
 import argparse
 import sys
 
+from voussoirkit import betterhelp
+from voussoirkit import operatornotify
 from voussoirkit import vlogging
 
 log = vlogging.getLogger(__name__, '$1')
 
 def $1_argparse(args):
-    return $1()
+    return 0
 
 def main(argv):
     argv = vlogging.set_level_by_argv(log, argv)
+    (opnot_context, argv) = operatornotify.main_log_context(argv, subject='$1 warnings')
 
     parser = argparse.ArgumentParser(description=__doc__)
 
     parser.add_argument('required_positional')
     parser.add_argument('optional_positional', nargs='?', default=None)
-    parser.add_argument('-k', '--kwarg', dest='kwarg', default=None)
-    parser.add_argument('-b', '--boolkwarg', dest='boolkwarg', action='store_true')
+    parser.add_argument('--kwarg', default=None)
+    parser.add_argument('--boolkwarg', action='store_true')
     parser.set_defaults(func=$1_argparse)
 
-    args = parser.parse_args(argv)
-    return args.func(args)
+    with opnot_context:
+        return betterhelp.single_main(argv, parser, __doc__)
 
 if __name__ == '__main__':
     raise SystemExit(main(sys.argv[1:]))
 
 ]]></content>
-    <tabTrigger>argparse</tabTrigger>
+    <tabTrigger>boilerplate</tabTrigger>
     <scope>source.python</scope>
+    <description>boilerplate single</description>
 </snippet>

@@ -4,7 +4,7 @@ from voussoirkit import vlogging
 
 log = vlogging.getLogger(__name__, '$1')
 
-def main(argv):
+    # Put this at the top of main
     argv = vlogging.set_level_by_argv(log, argv)
 
 ]]></content>

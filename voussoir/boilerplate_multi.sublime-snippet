@@ -1,0 +1,57 @@
+<snippet>
+    <content><![CDATA[
+'''
+$1
+======
+
+{$2}
+
+TO SEE DETAILS ON EACH COMMAND, RUN
+> $1.py <command> --help
+'''
+
+SUB_DOCSTRINGS = dict(
+$2='''
+$2:
+    Command description.
+'''.strip(),
+)
+
+import argparse
+import sys
+
+from voussoirkit import betterhelp
+from voussoirkit import operatornotify
+from voussoirkit import vlogging
+
+log = vlogging.getLogger(__name__, '$1')
+
+def $2_argparse(args):
+    return 0
+
+__doc__ = betterhelp.add_previews(__doc__, SUB_DOCSTRINGS)
+def main(argv):
+    argv = vlogging.set_level_by_argv(log, argv)
+    (opnot_context, argv) = operatornotify.main_log_context(argv, subject='$1 warnings')
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    subparsers = parser.add_subparsers()
+
+    p_$2 = subparsers.add_parser('$2')
+    p_$2.add_argument('required_positional')
+    p_$2.add_argument('optional_positional', nargs='?', default=None)
+    p_$2.add_argument('--kwarg', default=None)
+    p_$2.add_argument('--boolkwarg', action='store_true')
+    p_$2.set_defaults(func=$2_argparse)
+
+    with opnot_context:
+        return betterhelp.subparser_main(argv, parser, __doc__, SUB_DOCSTRINGS)
+
+if __name__ == '__main__':
+    raise SystemExit(main(sys.argv[1:]))
+
+]]></content>
+    <tabTrigger>boilerplate_multi</tabTrigger>
+    <scope>source.python</scope>
+    <description>boilerplate multi</description>
+</snippet>

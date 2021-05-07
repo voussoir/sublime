@@ -3,8 +3,8 @@
 p_$1 = subparsers.add_parser('$1')
 p_$1.add_argument('required_positional')
 p_$1.add_argument('optional_positional', nargs='?', default=None)
-p_$1.add_argument('-k', '--kwarg', dest='kwarg', default=None)
-p_$1.add_argument('-b', '--boolkwarg', dest='boolkwarg', action='store_true')
+p_$1.add_argument('--kwarg', default=None)
+p_$1.add_argument('--boolkwarg', action='store_true')
 p_$1.set_defaults(func=$1_argparse)
 ]]></content>
     <tabTrigger>subparser</tabTrigger>
