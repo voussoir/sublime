@@ -30,9 +30,6 @@ if __name__ == '__main__':
     raise SystemExit(main(sys.argv[1:]))
 
 ]]></content>
-<tabTrigger>argparse_multi</tabTrigger>
-    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <!-- <tabTrigger>hello</tabTrigger> -->
-    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <tabTrigger>argparse_multi</tabTrigger>
     <scope>source.python</scope>
 </snippet>

@@ -35,9 +35,5 @@ class ScrollingFrame:
     def grid(self, *args, **kwargs):
         self.frame_primary.grid(*args, **kwargs)
 ]]></content>
-<tabTrigger>tkscrollframe</tabTrigger>
-    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <!-- <tabTrigger>hello</tabTrigger> -->
-    <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <!-- <scope>source.python</scope> -->
+    <tabTrigger>tkscrollframe</tabTrigger>
 </snippet>
