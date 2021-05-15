@@ -53,5 +53,4 @@ if __name__ == '__main__':
 ]]></content>
     <tabTrigger>boilerplate_multi</tabTrigger>
     <scope>source.python</scope>
-    <description>boilerplate multi</description>
 </snippet>

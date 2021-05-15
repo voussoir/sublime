@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 from voussoirkit import operatornotify
-(notify_context, argv) = operatornotify.main_log_context(argv, subject='$1 warnings')
+(notify_context, argv) = operatornotify.main_log_context(argv, subject='$1.py')
 with notify_context:
 ]]></content>
     <tabTrigger>operatornotify_mainlog</tabTrigger>

@@ -1,18 +1,5 @@
 <snippet>
     <content><![CDATA[
-'''
-$1
-======
-'''
-import argparse
-import sys
-
-from voussoirkit import betterhelp
-from voussoirkit import operatornotify
-from voussoirkit import vlogging
-
-log = vlogging.getLogger(__name__, '$1')
-
 def $1_argparse(args):
     return 0
 
@@ -28,13 +15,10 @@ def main(argv):
     parser.add_argument('--boolkwarg', action='store_true')
     parser.set_defaults(func=$1_argparse)
 
-    with opnot_context:
-        return betterhelp.single_main(argv, parser, __doc__)
-
-if __name__ == '__main__':
-    raise SystemExit(main(sys.argv[1:]))
+    args = parser.parse_args(argv)
+    args.func(args)
 
 ]]></content>
-    <tabTrigger>boilerplate</tabTrigger>
+    <tabTrigger>argparse</tabTrigger>
     <scope>source.python</scope>
 </snippet>
