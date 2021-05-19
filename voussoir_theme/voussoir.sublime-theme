@@ -294,7 +294,7 @@
     },
     {
         "class": "sidebar_container",
-        "layer0.tint": [64, 64, 64],
+        "layer0.tint": [128, 128, 128],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 1, 0],
@@ -446,6 +446,8 @@
         "layer0.opacity": 1.0
     },
 
+    /** Tabset **/
+
     {
         "class": "tabset_control",
 
@@ -485,7 +487,7 @@
         // Tabset override for dark colors
         "class": "tabset_control",
         "attributes": ["file_dark"],
-        "layer1.opacity": 1.0,
+        "layer1.opacity": 0.5,
         "layer1.texture": "voussoir_theme/dark_tabset_background_transparent.png"
     },
 
@@ -529,7 +531,7 @@
     },
     {
         "class": "tab_control", "attributes": ["file_dark"],
-        "tint_modifier": [255, 255, 255, 128],
+        "tint_modifier": [255, 255, 255, 96],
         "layer0.texture": "voussoir_theme/dark_tab_mask3.png",
         "layer2.texture": "voussoir_theme/dark_unselected_tab_bg2.png",
         "layer2.opacity": 1.0
@@ -772,6 +774,7 @@
         "layer3.opacity": 1.0
     },
 
+    /** Bottom bar button icons **/
     {
         "class": "fold_button_control",
         "layer0.texture": "voussoir_theme/arrow_right.png",
