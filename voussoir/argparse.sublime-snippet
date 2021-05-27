@@ -15,8 +15,9 @@ def main(argv):
     parser.add_argument('--boolkwarg', action='store_true')
     parser.set_defaults(func=$1_argparse)
 
-    args = parser.parse_args(argv)
-    args.func(args)
+    with opnot_context:
+        args = parser.parse_args(argv)
+        return args.func(args)
 
 ]]></content>
     <tabTrigger>argparse</tabTrigger>
