@@ -1,8 +1,9 @@
 <snippet>
     <content><![CDATA[
 from voussoirkit import operatornotify
-(notify_context, argv) = operatornotify.main_log_context(argv, subject='$1.py')
-with notify_context:
+
+# Put this above main
+@operatornotify.main_decorator('$1')
 ]]></content>
     <tabTrigger>operatornotify_mainlog</tabTrigger>
     <scope>source.python</scope>

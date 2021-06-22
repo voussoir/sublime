@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+function on_pageload()
+{
+}
+document.addEventListener("DOMContentLoaded", on_pageload);
+]]></content>
+    <tabTrigger>on_pageload</tabTrigger>
+</snippet>

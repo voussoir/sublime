@@ -4,9 +4,8 @@ from voussoirkit import vlogging
 
 log = vlogging.getLogger(__name__, '$1')
 
-    # Put this at the top of main
-    argv = vlogging.main_level_by_argv(argv)
-
+# Put this above main
+@vlogging.main_decorator
 ]]></content>
     <tabTrigger>vlogging</tabTrigger>
     <scope>source.python</scope>

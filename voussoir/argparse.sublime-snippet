@@ -3,10 +3,9 @@
 def $1_argparse(args):
     return 0
 
+@operatornotify.main_decorator('$1')
+@vlogging.main_decorator
 def main(argv):
-    argv = vlogging.set_level_by_argv(log, argv)
-    (opnot_context, argv) = operatornotify.main_log_context(argv, subject='$1 warnings')
-
     parser = argparse.ArgumentParser(description=__doc__)
 
     parser.add_argument('required_positional')
@@ -15,9 +14,8 @@ def main(argv):
     parser.add_argument('--boolkwarg', action='store_true')
     parser.set_defaults(func=$1_argparse)
 
-    with opnot_context:
-        args = parser.parse_args(argv)
-        return args.func(args)
+    args = parser.parse_args(argv)
+    return args.func(args)
 
 ]]></content>
     <tabTrigger>argparse</tabTrigger>
