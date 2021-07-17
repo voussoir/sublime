@@ -1,7 +1,7 @@
 voussoir's Sublime Text 2 config
 ================================
 
-If you download this you can feel what it's like to be me.
+If you download this you can feel what it's like to be me. Copy these folders to your Sublime packages folder, or create junctions / symlinks in that folder which point to these.
 
 To use the color scheme, your preferences file should contain the line:
 
