@@ -3,7 +3,7 @@
 from voussoirkit import operatornotify
 
 # Put this above main
-@operatornotify.main_decorator('$1')
+@operatornotify.main_decorator(subject='$1')
 ]]></content>
     <tabTrigger>operatornotify_mainlog</tabTrigger>
     <scope>source.python</scope>
