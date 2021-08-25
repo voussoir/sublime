@@ -59,7 +59,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>meta.string, meta.string.interpolated</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
