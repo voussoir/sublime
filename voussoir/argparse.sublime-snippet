@@ -1,10 +1,11 @@
 <snippet>
     <content><![CDATA[
+import argparse
+import sys
+
 def $1_argparse(args):
     return 0
 
-@operatornotify.main_decorator('$1')
-@vlogging.main_decorator
 def main(argv):
     parser = argparse.ArgumentParser(description=__doc__)
 
@@ -17,6 +18,8 @@ def main(argv):
     args = parser.parse_args(argv)
     return args.func(args)
 
+if __name__ == '__main__':
+    raise SystemExit(main(sys.argv[1:]))
 ]]></content>
     <tabTrigger>argparse</tabTrigger>
     <scope>source.python</scope>

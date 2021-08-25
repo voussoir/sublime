@@ -21,7 +21,6 @@ import argparse
 import sys
 
 from voussoirkit import betterhelp
-from voussoirkit import operatornotify
 from voussoirkit import vlogging
 
 log = vlogging.getLogger(__name__, '$1')
@@ -31,7 +30,6 @@ def $2_argparse(args):
 
 __doc__ = betterhelp.add_previews(__doc__, SUB_DOCSTRINGS)
 
-@operatornotify.main_decorator('$1')
 @vlogging.main_decorator
 def main(argv):
     parser = argparse.ArgumentParser(description=__doc__)
