@@ -1042,8 +1042,6 @@ contexts:
     - match: ':'
       scope: punctuation.separator.mapping.key-value.python
       set: inside-directory-value
-    - match: ','
-      scope: invalid.illegal.expected-colon.python
     - match: \*\*
       scope: keyword.operator.unpacking.mapping.python
       push:
