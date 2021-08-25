@@ -1,6 +1,7 @@
 [
 { "keys": ["ctrl+shift+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
 { "keys": ["ctrl+shift+m"], "command": "toggle_minimap"},
+{ "keys": ["ctrl+shift+b"], "command": "expand_selection", "args": {"to": "brackets"} },
 { "keys": ["alt+shift+."], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }},
 { "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}},
 {
@@ -19,7 +20,6 @@
 
 // Disable default keybinds I don't care about
 { "keys": ["ctrl+b"], "command": "false" },
-{ "keys": ["ctrl+shift+b"], "command": "false" },
 
 // Auto-pair backticks
 { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
