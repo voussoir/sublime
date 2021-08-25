@@ -56,6 +56,17 @@
 			</dict>
 		</dict>
 		<dict>
+		    <key>name</key>
+		    <string>Docstring</string>
+		    <key>scope</key>
+		    <string>comment.block.documentation.python</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>foreground</key>
+		        <string>#E6DB74</string>
+		    </dict>
+		</dict>
+		<dict>
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
