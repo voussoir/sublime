@@ -4,6 +4,10 @@
 { "keys": ["ctrl+shift+b"], "command": "expand_selection", "args": {"to": "brackets"} },
 { "keys": ["alt+shift+."], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }},
 { "keys": ["shift+delete"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"}},
+{ "keys": ["ctrl+shift+space"], "command": "auto_complete" },
+{ "keys": ["shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
+{ "keys": ["shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
+
 {
     "keys": ["ctrl+shift+enter"],
     "command": "insert", "args": {"characters": "\n#"},
