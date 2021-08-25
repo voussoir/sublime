@@ -172,6 +172,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Storage type</string>
+			<key>scope</key>
+			<string>storage.type.string</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
+				<key>foreground</key>
+				<string>#66D9EF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Class name</string>
 			<key>scope</key>
 			<string>entity.name.class</string>
