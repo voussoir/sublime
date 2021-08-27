@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+\$fa = \$preview ? 12 : $1;
+\$fs = \$preview ? 2 : $2;
+]]></content>
+    <tabTrigger>faces</tabTrigger>
+    <scope>source.scad</scope>
+</snippet>
