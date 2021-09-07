@@ -12,7 +12,7 @@
     "font_face": "Consolas",
     "font_size": 10,
     "mini_diff": false,
-    "rulers": [80, 100],
+    "rulers": [0, 80, 100],
     "scroll_speed": 0,
     "theme": "voussoir.sublime-theme",
     "file_exclude_patterns": ["*.lnk", "*.db"],
