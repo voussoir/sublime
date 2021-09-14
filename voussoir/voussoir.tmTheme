@@ -209,7 +209,7 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function, punctuation.definition.annotation, meta.annotation</string>
+			<string>entity.name.function, punctuation.definition.annotation, meta.annotation.function, meta.annotation.python</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
