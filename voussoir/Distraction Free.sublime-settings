@@ -2,6 +2,7 @@
     "line_numbers": true,
     "gutter": true,
     "wrap_width": 120,
+    "draw_centered": true,
     "word_wrap": true,
     "scroll_past_end": true
 }
