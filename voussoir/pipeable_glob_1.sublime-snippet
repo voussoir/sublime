@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+patterns = pipeable.input(args.pattern, skip_blank=True, strip=True)
+files = pathclass.glob_many(patterns, files=True)
+]]></content>
+    <tabTrigger>pipeable_glob_1</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
