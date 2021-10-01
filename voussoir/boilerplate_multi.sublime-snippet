@@ -17,6 +17,8 @@ $2:
 '''.strip(),
 )
 
+__doc__ = betterhelp.add_previews(__doc__, SUB_DOCSTRINGS)
+
 import argparse
 import sys
 
@@ -27,8 +29,6 @@ log = vlogging.getLogger(__name__, '$1')
 
 def $2_argparse(args):
     return 0
-
-__doc__ = betterhelp.add_previews(__doc__, SUB_DOCSTRINGS)
 
 @vlogging.main_decorator
 def main(argv):
