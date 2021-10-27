@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+if (response.meta.status != 200 || ! response.meta.json_ok)
+{
+    alert(JSON.stringify(response));
+    return;
+}
+]]></content>
+    <tabTrigger>alertresponse3</tabTrigger>
+    <description>alertresponse if not 200 OR json_ok</description>
+</snippet>
