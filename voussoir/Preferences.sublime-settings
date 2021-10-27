@@ -22,4 +22,5 @@
     "tab_size": 4,
     "theme": "voussoir.sublime-theme",
     "translate_tabs_to_spaces": true,
+    "update_check": false,
 }
