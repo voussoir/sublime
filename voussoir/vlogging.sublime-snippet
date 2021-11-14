@@ -2,7 +2,7 @@
     <content><![CDATA[
 from voussoirkit import vlogging
 
-log = vlogging.getLogger(__name__, '$1')
+log = vlogging.get_logger(__name__, '$1')
 
 # Put this above main
 @vlogging.main_decorator
