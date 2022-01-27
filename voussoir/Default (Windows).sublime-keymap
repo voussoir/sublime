@@ -1,4 +1,5 @@
 [
+{ "keys": ["ctrl+shift+c"], "command": "toggle_setting", "args": {"setting": "draw_centered"}},
 { "keys": ["ctrl+shift+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
 { "keys": ["ctrl+shift+m"], "command": "toggle_minimap"},
 { "keys": ["ctrl+shift+b"], "command": "expand_selection", "args": {"to": "brackets"} },
