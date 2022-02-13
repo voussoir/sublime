@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+parser.add_argument(
+    '$1',
+    help='''
+    $2
+    ''',
+)
+]]></content>
+    <tabTrigger>parg</tabTrigger>
+    <description>argparse argument</description>
+</snippet>

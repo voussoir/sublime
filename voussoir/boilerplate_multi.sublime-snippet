@@ -1,24 +1,5 @@
 <snippet>
     <content><![CDATA[
-'''
-$1
-======
-
-{$2}
-
-TO SEE DETAILS ON EACH COMMAND, RUN
-> $1.py <command> --help
-'''
-
-SUB_DOCSTRINGS = dict(
-$2='''
-$2:
-    Command description.
-'''.strip(),
-)
-
-__doc__ = betterhelp.add_previews(__doc__, SUB_DOCSTRINGS)
-
 import argparse
 import sys
 
@@ -32,17 +13,38 @@ def $2_argparse(args):
 
 @vlogging.main_decorator
 def main(argv):
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description='''
+        ''',
+    )
+
     subparsers = parser.add_subparsers()
 
-    p_$2 = subparsers.add_parser('$2')
-    p_$2.add_argument('required_positional')
-    p_$2.add_argument('optional_positional', nargs='?', default=None)
-    p_$2.add_argument('--kwarg', default=None)
-    p_$2.add_argument('--boolkwarg', action='store_true')
+    p_$2 = subparsers.add_parser(
+        '$2',
+        description='''
+        ''',
+    )
+    p_$2.add_argument(
+        'required_positional',
+        help='''
+        ''',
+    )
+    p_$2.add_argument(
+        '--kwarg',
+        default=None,
+        help='''
+        ''',
+    )
+    p_$2.add_argument(
+        '--boolkwarg',
+        action='store_true',
+        help='''
+        ''',
+    )
     p_$2.set_defaults(func=$2_argparse)
 
-    return betterhelp.subparser_main(argv, parser, __doc__, SUB_DOCSTRINGS)
+    return betterhelp.go(parser, argv)
 
 if __name__ == '__main__':
     raise SystemExit(main(sys.argv[1:]))

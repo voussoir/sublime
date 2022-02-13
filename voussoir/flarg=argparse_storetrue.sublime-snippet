@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+parser.add_argument(
+    '--$1',
+    action='store_true',
+    help='''
+    $2
+    ''',
+)
+]]></content>
+    <tabTrigger>flarg</tabTrigger>
+    <description>argparse store_true argument</description>
+</snippet>

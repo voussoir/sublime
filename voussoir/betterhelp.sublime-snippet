@@ -5,7 +5,7 @@ from voussoirkit import betterhelp
 # replace the following lines:
 # args = parser.parse_args(argv)
 # return args.func(args)
-return betterhelp.single_main(argv, parser, __doc__)
+return betterhelp.go(parser, argv)
 ]]></content>
     <tabTrigger>betterhelp</tabTrigger>
     <scope>source.python</scope>

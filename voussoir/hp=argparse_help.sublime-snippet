@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+help='''
+$1
+''',
+]]></content>
+    <tabTrigger>hp</tabTrigger>
+    <description>hp='''...'''</description>
+</snippet>

@@ -1,9 +1,5 @@
 <snippet>
     <content><![CDATA[
-'''
-$1
-======
-'''
 import argparse
 import sys
 
@@ -17,15 +13,30 @@ def $1_argparse(args):
 
 @vlogging.main_decorator
 def main(argv):
-    parser = argparse.ArgumentParser(description=__doc__)
-
-    parser.add_argument('required_positional')
-    parser.add_argument('optional_positional', nargs='?', default=None)
-    parser.add_argument('--kwarg', default=None)
-    parser.add_argument('--boolkwarg', action='store_true')
+    parser = argparse.ArgumentParser(
+        description='''
+        ''',
+    )
+    parser.add_argument(
+        'required_positional',
+        help='''
+        ''',
+    )
+    parser.add_argument(
+        '--kwarg',
+        default=None,
+        help='''
+        ''',
+    )
+    parser.add_argument(
+        '--boolkwarg',
+        action='store_true',
+        help='''
+        ''',
+    )
     parser.set_defaults(func=$1_argparse)
 
-    return betterhelp.single_main(argv, parser, __doc__)
+    return betterhelp.go(parser, argv)
 
 if __name__ == '__main__':
     raise SystemExit(main(sys.argv[1:]))
