@@ -22,7 +22,7 @@ p_$1.add_argument(
     help='''
     ''',
 )
-p_$1.set_defaults(func=$2_argparse)
+p_$1.set_defaults(func=$1_argparse)
 ]]></content>
     <tabTrigger>subparser</tabTrigger>
     <scope>source.python</scope>
