@@ -7,12 +7,27 @@ def $1_argparse(args):
     return 0
 
 def main(argv):
-    parser = argparse.ArgumentParser(description=__doc__)
-
-    parser.add_argument('required_positional')
-    parser.add_argument('optional_positional', nargs='?', default=None)
-    parser.add_argument('--kwarg', default=None)
-    parser.add_argument('--boolkwarg', action='store_true')
+    parser = argparse.ArgumentParser(
+        description='''
+        ''',
+    )
+    parser.add_argument(
+        'required_positional',
+        help='''
+        ''',
+    )
+    parser.add_argument(
+        '--kwarg',
+        default=None,
+        help='''
+        ''',
+    )
+    parser.add_argument(
+        '--boolkwarg',
+        action='store_true',
+        help='''
+        ''',
+    )
     parser.set_defaults(func=$1_argparse)
 
     args = parser.parse_args(argv)
