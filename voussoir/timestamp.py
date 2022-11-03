@@ -7,5 +7,5 @@ import sublime, sublime_plugin
 
 class TimestampCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        timestamp = "%s" % (datetime.datetime.now().strftime("%Y %m %d"))
+        timestamp = "%s" % (datetime.datetime.now().strftime("%Y-%m-%d"))
         self.view.insert(edit, self.view.sel()[0].begin(), timestamp)
