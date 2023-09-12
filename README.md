@@ -13,6 +13,8 @@ To use the theme, your preferences file should contain the line:
 
 ## Mirrors
 
+https://git.voussoir.net/voussoir/sublime
+
 https://github.com/voussoir/sublime
 
 https://gitlab.com/voussoir/sublime
