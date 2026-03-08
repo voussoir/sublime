@@ -2,7 +2,7 @@
     <content><![CDATA[
 from voussoirkit import operatornotify
 
-# Put this above main
+# Put this above main, and above vlogging
 @operatornotify.main_decorator(subject='$1')
 ]]></content>
     <tabTrigger>operatornotify_mainlog</tabTrigger>
