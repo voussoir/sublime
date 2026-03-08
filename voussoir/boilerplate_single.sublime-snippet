@@ -42,6 +42,6 @@ if __name__ == '__main__':
     raise SystemExit(main(sys.argv[1:]))
 
 ]]></content>
-    <tabTrigger>boilerplate</tabTrigger>
+    <tabTrigger>boilerplate_single</tabTrigger>
     <scope>source.python</scope>
 </snippet>
