@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+parser.add_argument(
+    '--boolkwarg',
+    action='store_true',
+    help='''
+    ''',
+)
+]]></content>
+    <tabTrigger>bool_parg</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

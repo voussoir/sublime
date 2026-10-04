@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+parser.add_argument(
+    '--kwarg',
+    default=None,
+    help='''
+    ''',
+)
+]]></content>
+    <tabTrigger>kw_parg</tabTrigger>
+    <scope>source.python</scope>
+</snippet>
