@@ -13,7 +13,7 @@ def $2_argparse(args):
     return 0
 
 @operatornotify.main_decorator(subject='$1')
-@vlogging.main_decorator
+@vlogging.main_decorator(log=log)
 def main(argv):
     parser = argparse.ArgumentParser(
         description='''
