@@ -14,7 +14,14 @@
     "detect_indentation": false,
     "drag_text": false,
     "enable_tab_scrolling": false,
-    "file_exclude_patterns": ["*.lnk", "*.db"],
+    "file_exclude_patterns": [
+        "*.db",
+        "*.exe",
+        "*.lnk",
+        "*.pyc",
+        "*.pyz",
+        "*.zip"
+    ],
     "fold_buttons": false,
     "font_face": "Consolas",
     "font_size": 10,
